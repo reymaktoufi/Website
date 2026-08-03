@@ -226,19 +226,15 @@ section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 @media (min-width: 780px) {
   .about-grid { grid-template-columns: 0.85fr 1.15fr; align-items: start; }
 }
+
 .about-photo {
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius);
-  background: linear-gradient(160deg, var(--pink) 0%, var(--teal) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.85);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 1rem;
+  width: 100%;
+  aspect-ratio: 2795 / 4192;
+  object-fit: contain;
+  background: transparent;
+  display: block;
 }
+
 .about-copy p { color: var(--ink-soft); }
 .about-copy p:first-child { color: var(--ink); font-size: var(--step-lg); }
 
@@ -285,6 +281,13 @@ section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 .work-card .branch-mark { color: var(--pink-deep); }
 .work-card h3 { font-size: var(--step-lg); font-family: var(--font-body); font-weight: 600; }
 .work-card p { color: var(--ink-soft); font-size: 0.94rem; }
+
+.btn-small {
+  padding: 0.55em 1.1em;
+  font-size: 0.78rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
 
 .affiliations {
   margin-top: clamp(2.5rem, 6vw, 3.5rem);
