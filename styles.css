@@ -113,7 +113,7 @@ p:last-child { margin-bottom: 0; }
 .branch-divider {
   display: flex;
   justify-content: center;
-  padding-block: 0rem;
+  padding-block: 1rem;
   color: var(--line);
 }
 .branch-divider .branch-mark { width: 34px; height: 34px; color: var(--teal); opacity: 0.55; }
