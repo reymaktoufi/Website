@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="262.5585"
+   height="73.982346"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(-148.16919,-358.50482)"
+     style="display:inline"
+     id="layer2" />
+  <g
+     transform="translate(-148.16919,-358.50482)"
+     style="display:inline"
+     id="layer1">
+    <g
+       transform="matrix(2.3679601,0,0,2.3679601,-196.41587,-593.39299)"
+       id="g6375">
+      <path
+         d="M 148.6692,431.25726 C 149.99502,431.25726 153.9725,431.25726 153.9725,431.25726 L 153.9725,414.81703 L 171.4292,431.27373 L 171.4292,404.03365 L 166.52365,404.03365 L 166.52365,420.03194 L 149.1607,403.92833 C 149.1607,403.92833 149.1607,424.15951 149.1607,431.15324"
+         style="fill:#31bbff;fill-opacity:1;fill-rule:evenodd;stroke:#31bbff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path2470" />
+      <path
+         d="M 200.375,417.73718 C 200.375,423.11918 196.007,427.48718 190.625,427.48718 C 185.243,427.48718 180.875,423.11918 180.875,417.73718 C 180.875,412.35518 185.243,407.98718 190.625,407.98718 C 196.007,407.98718 200.375,412.35518 200.375,417.73718 z M 204.875,417.61218 C 204.875,425.54718 198.435,431.98718 190.5,431.98718 C 182.565,431.98718 176.125,425.54718 176.125,417.61218 C 176.125,409.67718 182.565,403.23718 190.5,403.23718 C 198.435,403.23718 204.875,409.67718 204.875,417.61218 z "
+         style="fill:#31bbff;fill-opacity:1;fill-rule:evenodd;stroke:#31bbff;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2476" />
+      <path
+         d="M 205.25,404.23718 L 210.875,404.23718 L 218.375,419.61218 L 225.625,404.23718 L 231.75,404.23718 L 218.625,431.86218 L 205.25,404.23718 z "
+         style="fill:#31bbff;fill-opacity:1;fill-rule:evenodd;stroke:#31bbff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path5393" />
+      <path
+         d="M 253.25,431.23718 L 247.625,431.23718 L 240.125,415.86218 L 232.875,431.23718 L 226.75,431.23718 L 239.875,403.61218 L 253.25,431.23718 z "
+         style="fill:#31bbff;fill-opacity:1;fill-rule:evenodd;stroke:#31bbff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path5395" />
+    </g>
+  </g>
+</svg>
