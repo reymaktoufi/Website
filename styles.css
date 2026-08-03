@@ -456,3 +456,103 @@ section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
   color: var(--ink-soft);
 }
 .site-footer a { color: var(--ink-soft); }
+
+/* --- Services page --- */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 7vw, 4.5rem);
+}
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  align-items: center;
+}
+@media (min-width: 780px) {
+  .service-row { grid-template-columns: 1fr 1.2fr; }
+  .service-row-reverse .service-photo { order: 2; }
+}
+.service-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.service-content h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--step-h3);
+  margin-bottom: 0.75rem;
+}
+.service-content p { color: var(--ink-soft); }
+
+.simple-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: clamp(1.5rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.citation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.citation-list li {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+.citation-list li:last-child { border-bottom: none; }
+
+/* --- Research & Resources page --- */
+.resource-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .resource-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 980px) {
+  .resource-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.resource-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.resource-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.resource-card .resource-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.resource-card h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--step-lg);
+}
+.resource-card p { color: var(--ink-soft); font-size: 0.94rem; }
+.resource-card .item-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--teal-deep);
+}
