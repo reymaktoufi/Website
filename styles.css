@@ -17,9 +17,9 @@
   --card-bg:     #FFFFFF;
 
   /* --- Type --- */
-  --font-display: "Petrona", Georgia, serif;
-  --font-body:    "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono:    "Space Mono", ui-monospace, Menlo, monospace;
+  --font-display: "Oswald", sans-serif;
+  --font-body:    "Source Serif 4", Georgia, serif;
+  --font-mono:    "Source Serif 4", Georgia, serif;
 
   /* --- Scale (fluid, mobile-first) --- */
   --step-eyebrow: 0.78rem;
