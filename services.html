@@ -66,7 +66,20 @@
       </p>
     </div>
   </section>
-
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (min-width: 780px) {
+  .hero-grid { grid-template-columns: 1.15fr 0.85fr; }
+}
+.hero-image {
+  width: 100%;
+  max-width: 380px;
+  justify-self: center;
+}
   <section class="section-alt">
     <div class="wrap">
       <div class="section-head">
