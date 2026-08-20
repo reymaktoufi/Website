@@ -66,8 +66,8 @@
       <p class="eyebrow"><svg class="branch-mark" width="20" height="20"><use href="#branch"/></svg> Talking Rhubarb Media</p>
       <h1>Make your expertise connect with the heart.</h1>
       <p class="lede">
-       I'm Dr. Reyhaneh Maktoufi, a communication strategist and
-        National Geographic Explorer. I help researchers, leaders, institutions, and media
+       I'm Dr. Reyhaneh Maktoufi, a communication and narrative strategist, an artist, and
+        a National Geographic Explorer. I help researchers, leaders, institutions, and media
         teams turn complicated work and challenging topics into campaigns and stories that build trust.
 
       </p>
@@ -88,7 +88,7 @@
         <div class="about-copy">
           <p>
             Dr. Reyhaneh (Rey) Maktoufi is an Iranian-American <a href="https://www.nationalgeographic.com/impact/article/reyhaneh-maktoufi-explorer-story">National Geographic Explorer</a>, 
-               published researcher, and science communicator who specializes in helping experts and organizations communicate in ways that actually build trust.
+               published researcher, artist, and science communicator who specializes in helping experts and organizations communicate in ways that actually build trust.
 She combines research expertise in trust and media with creative storytelling and workshop design. Rey works on popularizing the science of science communication as co-producer/host of <a href="https://www.youtube.com/playlist?list=PLXVeNOAZ_vZ5_AjzvHIQ2l7lDJcxUqaG6"> PBS|NOVA's Sciencing Out</a> and the podcast <a href="https://www.phuturedoctors.com/scicomm/hotline"> SciComm Hotline</a>. 
 Through partnerships with clients like National Geographic, MIT, Princeton, Kavli, and BWF, Rey designs communication strategies, workshops, and digital content that help scientists, storytellers, and institutions tell authentic stories that resonate.
           </p>
@@ -297,6 +297,43 @@ Through partnerships with clients like National Geographic, MIT, Princeton, Kavl
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script>
+(function () {
+  const heart = document.querySelector('.hero-image');
+  if (!heart) return;
 
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  let resetTimer = null;
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+        const delta = currentScrollY - lastScrollY;
+        lastScrollY = currentScrollY;
+
+        // scale based on how fast we're scrolling, capped so it doesn't get silly
+        const speed = Math.min(Math.abs(delta), 40);
+        const scale = 1 + (speed / 40) * 0.12; // up to ~1.12x
+
+        heart.style.transform = `scale(${scale})`;
+
+        // reset back to normal size shortly after scrolling stops
+        clearTimeout(resetTimer);
+        resetTimer = setTimeout(() => {
+          heart.style.transform = 'scale(1)';
+        }, 150);
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script>
+     
 </body>
 </html>
