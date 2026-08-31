@@ -239,25 +239,113 @@ section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 .section-head .eyebrow { margin-bottom: 0.85rem; }
 
 /* --- About --- */
-.about-grid {
-  display: grid;
-  gap: clamp(2rem, 5vw, 3.5rem);
-  grid-template-columns: 1fr;
-}
-@media (min-width: 780px) {
-  .about-grid { grid-template-columns: 0.85fr 1.15fr; align-items: start; }
-}
-
-.about-photo {
-  width: 100%;
-  aspect-ratio: 2795 / 4192;
-  object-fit: contain;
-  background: transparent;
-  display: block;
-}
+#about .eyebrow { margin-bottom: 1.25rem; }
 
 .about-copy p { color: var(--ink-soft); }
 .about-copy p:first-child { color: var(--ink); font-size: var(--step-lg); }
+
+/* --- Experiment: scroll narrative bio --- */
+.experiment {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+.experiment-inner {
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2.25rem, 6vw, 3.5rem);
+  text-align: center;
+}
+
+.experiment-step,
+.experiment-beat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.experiment-prompt {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: var(--step-lg);
+  max-width: 34ch;
+  margin: 0;
+}
+
+.experiment-statement {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--ink);
+  font-size: var(--step-h3);
+  line-height: 1.25;
+  max-width: 22ch;
+  margin: 0;
+}
+.experiment-statement em {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--step-lg);
+  color: var(--ink-soft);
+  display: block;
+  margin-top: 0.6rem;
+}
+.experiment-statement--tagline {
+  max-width: 26ch;
+}
+
+.experiment-minibio {
+  margin-top: 0.25rem;
+  max-width: 42ch;
+}
+
+.experiment-story {
+  max-width: 44ch;
+  text-align: left;
+  color: var(--ink-soft);
+}
+
+.experiment-illustration {
+  width: 100%;
+  max-width: 180px;
+  color: var(--teal);
+}
+
+.experiment-photo--crop {
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+}
+
+.experiment-reveal-frame {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1365 / 2048;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  clip-path: inset(0 0 78% 0);
+  transition: clip-path 1.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.experiment-reveal-frame.is-revealed {
+  clip-path: inset(0 0 0% 0);
+}
+.experiment-photo--full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
 
 .tags {
   display: flex;
